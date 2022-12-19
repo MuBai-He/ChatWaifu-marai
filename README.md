@@ -61,13 +61,16 @@ Python:`python -m venv chatWaifu`
 
 ### <span id="venv">1.3 进入创建好的虚拟环境:</span>
 Conda:`conda activate chatWaifu`
+
 ![](readme/3.png)
 
 Python:`.\chatWaifu\Scripts\activate.bat`
+
 ![](readme/7.png)
 
 ### <span id="pip">1.4 pip安装项目所需要的库文件:</span>
 `pip install -r requirements.txt`
+
 ![](readme/4.png)
 
 ## <span id=".model">2.导入模型到根目录model文件夹:</span>
