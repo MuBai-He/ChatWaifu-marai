@@ -9,9 +9,9 @@
 </p>
 
 #
-### 这是一个基于TTS+VITS的ChatGPT语音对话程序!
+### 这是一个TTS+VITS的ChatGPT语音对话程序!
 
-基于:
+**基于**:
  - [miraicle](https://github.com/Excaive/miraicle)
  - [mirai-http-api](https://github.com/project-mirai/mirai-api-http)
  - [ChatWaifu](https://github.com/cjyaddone/ChatWaifu)
