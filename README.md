@@ -1,8 +1,8 @@
 [中文](README.md "中文") [English](eng-README.md "English") [日本語](jp-README.md "日本語")
 ![cover](readme/cyberbot.png)
 
-<a href="http://c.biancheng.net" target="_blank">C语言中文网</a>:
 <p align="center">
+	学技术从<a href="http://www.php.cn" style="display:inline-block; width:110px; text-align:center">php.cn</a>开始!
 	<img alt="GitHub" src="https://img.shields.io/github/license/MuBai-He/ChatWaifu-marai?color=red">
 	<img src="https://img.shields.io/badge/Python-3.7|8|9|10-green" alt="PYTHON" >
   	<a href="https://app.fossa.com/projects/git%2Bgithub.com%2FMuBai-He%2FChatWaifu-marai?ref=badge_small" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FMuBai-He%2FChatWaifu-marai.svg?type=small"/></a>
