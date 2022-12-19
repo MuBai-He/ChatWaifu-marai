@@ -359,8 +359,8 @@ if __name__ == "__main__":
             print(answer)
             generateSound(answer)
             sound = miraicle.Voice.from_base64('output.wav')
-            bot.send_group_msg(group=msg.group, msg=answer)
             bot.send_group_msg(group=msg.group, msg=sound)
+            bot.send_group_msg(group=msg.group, msg=answer)
             #PlaySound(r'.\output.wav', flags=1)
 
     bot.run()
