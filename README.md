@@ -1,4 +1,4 @@
-# <p align="center">CyberWaifu-Marai</p>
+![cover](readme/cyberbot.png)
 
 <p align="center">
 	<img alt="GitHub" src="https://img.shields.io/github/license/MuBai-He/ChatWaifu-marai?color=red">
