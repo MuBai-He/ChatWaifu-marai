@@ -9,7 +9,7 @@
 </p>
 
 #
-### 这是一个TTS+VITS的ChatGPT语音对话程序!
+### 这是一个使用TTS+VITS的ChatGPT语音对话程序!
 
 **基于**:
  - [miraicle](https://github.com/Excaive/miraicle)
