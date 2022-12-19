@@ -1,6 +1,7 @@
 [中文](README.md "中文") [English](eng-README.md "English") [日本語](jp-README.md "日本語")
 ![cover](readme/cyberbot.png)
 
+<a href="http://c.biancheng.net" target="_blank">C语言中文网</a>:
 <p align="center">
 	<img alt="GitHub" src="https://img.shields.io/github/license/MuBai-He/ChatWaifu-marai?color=red">
 	<img src="https://img.shields.io/badge/Python-3.7|8|9|10-green" alt="PYTHON" >
