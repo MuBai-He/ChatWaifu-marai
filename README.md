@@ -2,9 +2,9 @@
 
 <p align="center">
   <img alt="License" src="https://img.shields.io/badge/LICENSE-Other-ff69b4">
-  <img src="https://img.shields.io/badge/Python-3.7|8|9|10-green" alt="PYTHON" >
+  <img src="https://img.shields.io/badge/Python-3.7|8|9|10" alt="PYTHON" >
   <a href="https://afdian.net/a/Suki1077"><img src="https://img.shields.io/badge/Buyme-milk-DB94A2" alt="SPONSOR"></a>
-  [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FMuBai-He%2FChatWaifu-marai.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FMuBai-He%2FChatWaifu-marai?ref=badge_shield)
+  <a href="https://app.fossa.com/projects/git%2Bgithub.com%2FMuBai-He%2FChatWaifu-marai?ref=badge_small" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FMuBai-He%2FChatWaifu-marai.svg?type=small"/></a>
 </p>
 
 [中文](README.md "中文") [English](eng-README.md "English") [日本語](jp-README.md "日本語")
