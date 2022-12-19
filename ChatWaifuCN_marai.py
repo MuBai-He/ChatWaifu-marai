@@ -350,17 +350,22 @@ if __name__ == "__main__":
     @miraicle.Mirai.receiver('GroupMessage')
     def hello_to_group(bot: miraicle.Mirai, msg: miraicle.GroupMessage):
         if None != re.match('\[At:2122523627]', msg.text):
-            bot.send_group_msg(group=msg.group, msg="正在处理中请稍后...")
-            text = msg.plain
-            resp = api.send_message(text)
-            answer = resp["message"].replace('\n', '')
-            print("ChatGPT:")
-            print(answer)
-            generateSound("[ZH]"+answer+"[ZH]")
-            sound = miraicle.Voice.from_base64('output.wav')
-            bot.send_group_msg(group=msg.group, msg=sound)
-            bot.send_group_msg(group=msg.group, msg=answer)
-            # PlaySound(r'.\output.wav', flags=1)
+            if msg.plain.strip() == "重置对话":
+                api.reset_conversation()
+                bot.send_group_msg(group=msg.group, msg="重置对话成功")
+
+            else:
+                bot.send_group_msg(group=msg.group,msg="正在处理中请稍后...")
+                text = msg.plain+' 使用日语回答'
+                resp = api.send_message(text)
+                answer = resp["message"].replace('\n', '')
+                print("ChatGPT:")
+                print(answer)
+                generateSound("[ZH]"+answer+"[ZH]")
+                sound = miraicle.Voice.from_base64('output.wav')
+                bot.send_group_msg(group=msg.group, msg=sound)
+                bot.send_group_msg(group=msg.group, msg=answer)
+                #PlaySound(r'.\output.wav', flags=1)
 
 
     bot.run()
