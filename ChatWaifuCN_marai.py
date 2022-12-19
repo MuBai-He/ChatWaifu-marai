@@ -14,7 +14,7 @@ from winsound import PlaySound
 
 qq =               # 你登录的机器人 QQ 号
 verify_key = ''     # 你在 setting.yml 中设置的 verifyKey
-port =                  # 你在 setting.yml 中设置的 port (http)
+port =8080                  # 你在 setting.yml 中设置的 port (http)
 
 ####################################
 #CHATGPT INITIALIZE
