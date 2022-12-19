@@ -1,5 +1,6 @@
-<p align="center">[中文](README.md "中文") [English](eng-README.md "English") [日本語](jp-README.md "日本語")</p>
 ![cover](readme/cyberbot.png)
+
+[中文](README.md "中文") [English](eng-README.md "English") [日本語](jp-README.md "日本語")
 
 <p align="center">
 	<img alt="GitHub" src="https://img.shields.io/github/license/MuBai-He/ChatWaifu-marai?color=red">
