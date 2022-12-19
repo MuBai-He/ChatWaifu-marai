@@ -1,9 +1,8 @@
 # <p align="center">CyberWaifu-Marai</p>
 
 <p align="center">
-  <img alt="License" src="https://img.shields.io/badge/LICENSE-Other-ff69b4">
+  [https://img.shields.io/badge/LICENSE-Other-ff69b4](https://img.shields.io/github/license/MuBai-He/ChatWaifu-marai)
   <img src="https://img.shields.io/badge/Python-3.7|8|9|10-green" alt="PYTHON" >
-  <a href="https://afdian.net/a/Suki1077"><img src="https://img.shields.io/badge/Buyme-milk-DB94A2" alt="SPONSOR"></a>
   <a href="https://app.fossa.com/projects/git%2Bgithub.com%2FMuBai-He%2FChatWaifu-marai?ref=badge_small" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FMuBai-He%2FChatWaifu-marai.svg?type=small"/></a>
 </p>
 
