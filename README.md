@@ -1,11 +1,11 @@
-[中文](README.md "中文") [English](eng-README.md "English") [日本語](jp-README.md "日本語")
+<p align="center">[中文](README.md "中文") [English](eng-README.md "English") [日本語](jp-README.md "日本語")</p>
 ![cover](readme/cyberbot.png)
 
-<a style="display:inline-block; width:110px; text-align:center">
+<p align="center">
 	<img alt="GitHub" src="https://img.shields.io/github/license/MuBai-He/ChatWaifu-marai?color=red">
 	<img src="https://img.shields.io/badge/Python-3.7|8|9|10-green" alt="PYTHON" >
   	<a href="https://app.fossa.com/projects/git%2Bgithub.com%2FMuBai-He%2FChatWaifu-marai?ref=badge_small" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FMuBai-He%2FChatWaifu-marai.svg?type=small"/></a>
-</a>
+</p>
 
 #
 ### 这是一个基于TTS+VITS的ChatGPT语音对话程序!
