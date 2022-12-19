@@ -8,11 +8,11 @@
 
 [中文](README.md "中文") [English](eng-README.md "English") [日本語](jp-README.md "日本語")
 
-> ### 这是一个基于TTS+VITS的ChatGPT语音对话程序!
-> 基于
-> - [miraicle](https://github.com/Excaive/miraicle)
-> - [mirai-http-api](https://github.com/project-mirai/mirai-api-http)
-> - [ChatWaifu](https://github.com/cjyaddone/ChatWaifu)
+### 这是一个基于TTS+VITS的ChatGPT语音对话程序!
+基于
+ - [miraicle](https://github.com/Excaive/miraicle)
+ - [mirai-http-api](https://github.com/project-mirai/mirai-api-http)
+ - [ChatWaifu](https://github.com/cjyaddone/ChatWaifu)
 
 效果演示BiliBIli:[《青春猪头少年不会梦见赛博女友》](https://www.bilibili.com/video/BV1rv4y1Q7eT "BiliBili")
 
