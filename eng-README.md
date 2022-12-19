@@ -10,9 +10,9 @@
 </p>
 
 #
-> ### This is a chatting Waifu program based on VITS & ChatGPT!
+> ### This is a chatting Waifu program use VITS & ChatGPT!
 
-Base on:
+**Base on**:
  - [miraicle](https://github.com/Excaive/miraicle)
  - [mirai-http-api](https://github.com/project-mirai/mirai-api-http)
  - [ChatWaifu](https://github.com/cjyaddone/ChatWaifu)
