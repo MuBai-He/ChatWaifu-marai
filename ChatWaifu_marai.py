@@ -6,6 +6,7 @@ import utils
 import commons
 import sys
 import re
+import os
 import miraicle
 from torch import no_grad, LongTensor
 import logging
@@ -353,12 +354,13 @@ if __name__ == "__main__":
     bot = miraicle.Mirai(qq=qq, verify_key=verify_key, port=port)
     print(idmessage)
     peaker_id = input()
+    os_dir=os.getcwd()
 
 
     @miraicle.Mirai.receiver('GroupMessage')
     def reply_to_group(bot: miraicle.Mirai, msg: miraicle.GroupMessage):
         global sound_status
-        if msg.at_me() and msg.plain.isspace()==False and sound_status==False:
+        if msg.at_me() and msg.plain.lstrip()!="" and sound_status==False:
             if msg.plain.strip() == "重置对话":
                 api.reset_conversation()
                 bot.send_group_msg(group=msg.group, msg="重置对话成功")
@@ -373,17 +375,25 @@ if __name__ == "__main__":
                 else:
                     generateSound(answer,language="jp")
                 #generateSound(answer,language="multi")
-                sound = miraicle.Voice.from_base64('output.wav')
+                if False:
+                    try:
+                        os.remove('output.pcm')
+                    except:
+                        pass
+                    os.popen(r'"D:\Program Files (x86)\ffmpeg\bin\ffmpeg.exe" -i '+os_dir+'"\output.wav" -f s16le -ar 24000 -ac 1 -acodec pcm_s16le '+os_dir+'"\output.pcm" -loglevel quiet')
+                    os.popen(os_dir+'\silk_v3_encoder.exe '+os_dir+ '\output.pcm '+os_dir+'\output.silk -tencent')
+                    sound = miraicle.Voice(base64='output.silk')
+                else:
+                    sound = miraicle.Voice(base64='output.wav')
                 print("ChatGPT:")
                 print(answer)
                 bot.send_group_msg(group=msg.group, msg=sound)
-                #bot.send_group_msg(group=msg.group, msg=answer)
                 bot.send_group_msg(group=msg.group,msg=answer)
                 #PlaySound(r'.\output.wav', flags=1)
                 sound_status=False
-        elif msg.at_me() and  msg.plain.isspace() == False and sound_status==True:
+        elif msg.at_me() and  msg.plain.lstrip()!="" and sound_status==True:
             bot.send_group_msg(group=msg.group,msg="上条信息还没处理完，请等一下再试吧！")
-        elif msg.at_me() and msg.plain.isspace()==True:
+        elif msg.at_me() and msg.plain.lstrip()=="":
             bot.send_group_msg(group=msg.group, msg="哎呦，你干嘛~")
         else:
             pass
