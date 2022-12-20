@@ -106,7 +106,7 @@ Google Drive:https://drive.google.com/file/d/1tMCafhnUoL7FbevVQ44VQi-WznDjt23_/v
 
 在群中@你的机器人吧！
 
-附赠：[ChatGPT 中文调教指南](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)
+附赠:[ChatGPT 中文调教指南](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)
 
 ## <span id="9315">4.已知问题:</span>
 
