@@ -82,9 +82,7 @@ Google Drive:https://drive.google.com/file/d/1tMCafhnUoL7FbevVQ44VQi-WznDjt23_/v
 
 ## <span id="22">3.运行（快和老婆们对话吧:</span>
 
-日语版：`python ChatWaifuJP_marai.py`
-
-中文版：`python ChatWaifuCN_marai.py`
+中日双语版：`python ChatWaifu_marai.py`
 
 在群中@你的机器人吧！
 
