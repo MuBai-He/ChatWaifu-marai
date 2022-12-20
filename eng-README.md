@@ -84,8 +84,6 @@ Ali Drive: https://www.aliyundrive.com/s/9JEj1mp1ZRv 提取码: m2y3
 
 Chinese and Japanese Ver：`python ChatWaifu_marai.py`
 
-@ your bot in the group!
-
 ### <span id="343533">3.1 Get marai verify_key and QQ</span>
 #### At the beginning of the program is the configuration area shown below
 
@@ -103,7 +101,7 @@ Chinese and Japanese Ver：`python ChatWaifu_marai.py`
 
 ### <span id="444">3.3 Start chatting with CyberWaifu</span>
 
-Start talking when the console prompts "You:" and then the sentence is recorded and sent to the ChatGPT conversation. 
+@ your bot in the group!
 
 ## <span id="9315">4.known issue:</span>
 
