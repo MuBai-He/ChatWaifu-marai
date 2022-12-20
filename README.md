@@ -84,8 +84,6 @@ Google Drive:https://drive.google.com/file/d/1tMCafhnUoL7FbevVQ44VQi-WznDjt23_/v
 
 中日双语版：`python ChatWaifu_marai.py`
 
-在群中@你的机器人吧！
-
 ### <span id="343533">3.1 获取marai verify_key和QQ</span>
 #### 在程序开头有下图的配置区域
 
@@ -105,6 +103,8 @@ Google Drive:https://drive.google.com/file/d/1tMCafhnUoL7FbevVQ44VQi-WznDjt23_/v
 #### 将值复制进入终端并回车
 
 ### <span id="444">3.3 开始和CyberWaifu聊天！！！</span>
+
+在群中@你的机器人吧！
 
 ## <span id="9315">4.已知问题:</span>
 
