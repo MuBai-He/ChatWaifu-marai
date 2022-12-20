@@ -81,9 +81,10 @@ Ali Drive: https://www.aliyundrive.com/s/9JEj1mp1ZRv 提取码: m2y3
 ### <span id="cd1">2.1Double click model.exe to import Models</span>
 
 ## <span id="22">3.RUN（Start chatting with CyberWaifu:</span>
-Japanese Ver：`python ChatWaifuJP_marai.py`
 
-Chinese Ver：`python ChatWaifuCN_marai.py`
+Chinese and Japanese Ver：`python ChatWaifu_marai.py`
+
+@ your bot in the group!
 
 ### <span id="343533">3.1 Get marai verify_key and QQ</span>
 #### At the beginning of the program is the configuration area shown below
