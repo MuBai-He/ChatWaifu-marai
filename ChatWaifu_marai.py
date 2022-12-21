@@ -1,3 +1,5 @@
+import time
+
 from scipy.io.wavfile import write
 from mel_processing import spectrogram_torch
 from text import text_to_sequence, _clean_text
@@ -356,7 +358,6 @@ if __name__ == "__main__":
     peaker_id = input()
     os_dir=os.getcwd()
 
-
     @miraicle.Mirai.receiver('GroupMessage')
     def reply_to_group(bot: miraicle.Mirai, msg: miraicle.GroupMessage):
         global sound_status
@@ -365,6 +366,7 @@ if __name__ == "__main__":
                 api.reset_conversation()
                 bot.send_group_msg(group=msg.group, msg="重置对话成功")
             else:
+                return_voice = True
                 sound_status = True
                 bot.send_group_msg(group=msg.group, msg="正在处理中请稍后...")
                 text = msg.plain.strip()
@@ -378,16 +380,28 @@ if __name__ == "__main__":
                 if False:
                     try:
                         os.remove('output.pcm')
+                        os.remove('output.silk')
                     except:
                         pass
-                    os.popen(r'"D:\Program Files (x86)\ffmpeg\bin\ffmpeg.exe" -i '+os_dir+'"\output.wav" -f s16le -ar 24000 -ac 1 -acodec pcm_s16le '+os_dir+'"\output.pcm" -loglevel quiet')
-                    os.popen(os_dir+'\silk_v3_encoder.exe '+os_dir+ '\output.pcm '+os_dir+'\output.silk -tencent')
-                    sound = miraicle.Voice(base64='output.silk')
+
+                    ffmpeg=os.popen(r'"D:\Program Files (x86)\ffmpeg\bin\ffmpeg.exe" -i '+os_dir+'"\output.wav" -f s16le -ar 24000 -ac 1 -acodec pcm_s16le '+os_dir+'"\output.pcm" -loglevel quiet')
+                    #print(ffmpeg)
+                    while return_voice:
+                        if os.path.exists('output.pcm'):
+                            return_voice=False
+                    return_voice = True
+
+                    voice_status=os.system(os_dir+r'\silk_v3_encoder.exe '+os_dir+ r'\output.pcm '+os_dir+r'\output.silk -tencent -quiet')
+                    while return_voice:
+                        if voice_status==0:
+                            return_voice=False
+                    sound=miraicle.Voice(base64='output.silk')
                 else:
                     sound = miraicle.Voice(base64='output.wav')
+
                 print("ChatGPT:")
                 print(answer)
-                bot.send_group_msg(group=msg.group, msg=sound)
+                bot.send_group_msg(group=msg.group,msg=sound)
                 bot.send_group_msg(group=msg.group,msg=answer)
                 #PlaySound(r'.\output.wav', flags=1)
                 sound_status=False
