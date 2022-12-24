@@ -24,9 +24,7 @@
 * [x] 多角色语音
 * [x] 语音识别对话 (研发了一款真正人性化的智能语音Q宝
 * [x] 对接Marai机器人
-
-**预计支持功能：**
-* [ ] 对接Live2D的Web版本
+* [x] [对接Live2D版本](https://github.com/cjyaddone/ChatWaifuL2D)
 
 
 # 目录
