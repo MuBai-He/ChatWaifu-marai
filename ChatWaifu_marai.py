@@ -362,7 +362,7 @@ if __name__ == "__main__":
     def reply_to_group(bot: miraicle.Mirai, msg: miraicle.GroupMessage):
         global sound_status
         if msg.at_me() and msg.plain.lstrip()!="" and sound_status==False:
-            if msg.plain.strip() == "重置对话":
+            if msg.plain.lstrip() == "重置对话":
                 api.reset_conversation()
                 bot.send_group_msg(group=msg.group, msg="重置对话成功")
             else:
@@ -395,9 +395,10 @@ if __name__ == "__main__":
                     while return_voice:
                         if voice_status==0:
                             return_voice=False
-                    sound=miraicle.Voice(base64='output.silk')
+                    sound_win=miraicle.Voice(base64='output.silk')
                 else:
                     sound = miraicle.Voice(base64='output.wav')
+
 
                 print("ChatGPT:")
                 print(answer)
