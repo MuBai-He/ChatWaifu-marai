@@ -38,9 +38,19 @@ def get_input():
     user_input = input()
     return user_input
 
-def get_token():
-    token = input("Copy your token from ChatGPT and press Enter \n")
-    return token;
+
+if os.path.exists("./token.txt") == True:
+    def get_token():
+        tok = open("token.txt",encoding = "utf-8")
+        token=tok.read()
+        print("you have cached your token, simpiflied your login!")
+        return token;
+else :
+    def get_token():
+        token = input("Copy your token from ChatGPT and press Enter \n")
+        with open('token.txt','w') as tok:
+            tok.write(token)  
+            return token;
 
       
 ################################################
